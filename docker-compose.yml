@@ -29,6 +29,9 @@ services:
     deploy:
       replicas: 1
     restart: unless-stopped
+    ports:
+      - 8000:8000
+      - 2525:2525
     expose:
       - 8000
       - 2525
